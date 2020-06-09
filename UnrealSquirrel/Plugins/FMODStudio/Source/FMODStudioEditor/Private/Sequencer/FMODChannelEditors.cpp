@@ -23,9 +23,9 @@ public:
         WeakSection = InWeakSection;
         WeakSequencer = InWeakSequencer;
 
-         //ChildSlot[MovieSceneToolHelpers::MakeEnumComboBox(InEnum,
-         //    TAttribute<int32>::Create(TAttribute<int32>::FGetter::CreateSP(this, &SFMODEventControlKeyEditor::OnGetCurrentValueAsInt)),
-         //    FOnEnumSelectionChanged::CreateSP(this, &SFMODEventControlKeyEditor::OnChangeKey))];
+         ChildSlot[MovieSceneToolHelpers::MakeEnumComboBox(InEnum,
+             TAttribute<int32>::Create(TAttribute<int32>::FGetter::CreateSP(this, &SFMODEventControlKeyEditor::OnGetCurrentValueAsInt)),
+             FOnEnumSelectionChanged::CreateSP(this, &SFMODEventControlKeyEditor::OnChangeKey))];
     }
 
 private:
